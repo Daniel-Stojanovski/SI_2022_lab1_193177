@@ -157,10 +157,16 @@ Daniel Stojanovski 193177
 
 20. git checkout master														Скокаме на гранката master
 	git merge branch1														Ја спојуваме гранката branch1 кон master
-
+																			*Спојувањето се извршува по Fast-Forward стратегија
 
 21. git merge branch2														Ја спојуваме гранката branch2 кон master
-	
+																			*Спојувањето се извршува по Fast-Forward стратегија
+																			
+																			*Се појави конфликт при спојување со оваа гранка кај shopping_list документот,
+																			а истиот го решив на начин што го одбрав делот кој го содржеше HEAD наместо 
+																			оној кој го имаше branch2. Тие бие назначени како „<<<<<< HEAD“ и „>>>>>> Branch2“,
+																			одделени со „======“. Сам ги избришав промените кои ги нудеше Branch2 и непотребните
+																			линии.
 	
 22. git add .																Ги додаваме документите во Stage Аrea
 	git commit -m "Add docs"												Правиме commit на документот во Local Repository и додаваме порака
@@ -169,3 +175,4 @@ Daniel Stojanovski 193177
 23. git push origin master
 	git push origin branch1													Синхронизирање на досегашните гранки во репозиториумот
 	git push origin branch2													
+	
