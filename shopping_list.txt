@@ -1,0 +1,5 @@
+bread
+chicken
+milk
+potato
+pepper
