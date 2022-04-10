@@ -1,0 +1,171 @@
+Daniel Stojanovski 193177
+01. -
+02. -
+03. - 
+04. git clone https://github.com/Daniel-Stojanovski/SI_2022_lab1_193177.git Клонирање на репозиториумот како локален репозиториум		
+	cd SI_2022_lab1_193177 													Влегуваме внатре во локалниот репозиториум
+	git config user.email "daniel.stojanovski@students.finki.ukim.mk"
+	git config user.name "Daniel 193177"
+	git add . 
+	git commit -m "Initial commit"
+	git push origin master
+	
+	
+05. git add shopping_list.txt												Го додаваме документот во Stage Аrea
+	git commit -m "Add 5 items to the shopping list"						Правиме commit на документот во Local Repository и додаваме порака
+
+	
+06. git add shopping_list.txt												Го додаваме документот во Stage Аrea
+	git commit -m "Add quantities to the items"								Правиме commit на документот во Local Repository и додаваме порака
+
+	
+07. git branch branch1														Kреираме две гранки со командата git branch <име на гранка>
+	git branch branch2
+	
+	
+08. git log																	Внесување на досегашните логови во документацијата
+
+				PS C:\Users\Krist\OneDrive\Documents\Daniel\Finki\6_Semestar\SI\SI_Lab1\SI_2022_lab1_193177> git log
+				commit 40ef8fbb3f55f28be619960e8bdac3f7e0893419 (HEAD -> master, origin/master, origin/HEAD, branch2, branch1)
+				Author: Daniel 193177 <daniel.stojanovski@students.finki.ukim.mk>
+				Date:   Sun Apr 10 18:41:52 2022 +0200
+
+				Add quantities to the items
+
+				commit 2819d2dc2634edc5e3991d704a25b690dab01765
+				Author: Daniel 193177 <daniel.stojanovski@students.finki.ukim.mk>
+				Date:   Sun Apr 10 18:39:57 2022 +0200
+
+					Add 5 items to the shopping list
+
+				commit 0625ef6c59d0997ad75759381eb90364186ef4e0
+				Author: Daniel 193177 <daniel.stojanovski@students.finki.ukim.mk>
+				Date:   Sun Apr 10 18:38:21 2022 +0200
+
+					Initial commit
+
+				commit 050090cebb0fda52243b1a03e049a7551f71bc12
+				Author: Daniel-Stojanovski <100514343+Daniel-Stojanovski@users.noreply.github.com>
+				Date:   Sun Apr 10 18:34:34 2022 +0200
+
+					Initial commit
+				PS C:\Users\Krist\OneDrive\Documents\Daniel\Finki\6_Semestar\SI\SI_Lab1\SI_2022_lab1_193177>
+
+
+09. git push origin master
+	git push origin branch1													Синхронизирање на досегашните гранки во репозиториумот
+	git push origin branch2													
+	
+	
+10.	git checkout branch1													Скокаме на гранката branch1
+
+
+11. git add shopping_list.txt												Го додаваме документот во Stage Аrea
+	git commit -m "Change quantity of item #5"								Правиме commit на документот во Local Repository и додаваме порака
+
+	
+12. git checkout master														Скокаме на гранката master
+
+
+13. git add shopping_list.txt												Го додаваме документот во Stage Аrea
+	git commit -m "Change quantity of item #2"								Правиме commit на документот во Local Repository и додаваме порака
+
+
+14. git push origin master
+	git push origin branch1													Синхронизирање на досегашните гранки во репозиториумот
+	git push origin branch2													
+
+
+15. git checkout branch2													Скокаме на гранката branch2
+
+
+16. git add shopping_list.txt												Го додаваме документот во Stage Аrea
+	git commit -m "Modify item #4"											Правиме commit на документот во Local Repository и додаваме порака
+
+
+17. git log
+				PS C:\Users\Krist\OneDrive\Documents\DANIEL\FINKI\6_SEMESTAR\SI\SI_LAB1\SI_2022_lab1_193177> git log
+				commit 0dd108fda5b4784212c50ae513d50926b7504162 (HEAD -> branch2)
+				Author: Daniel 193177 <daniel.stojanovski@students.finki.ukim.mk>
+				Date:   Sun Apr 10 19:40:24 2022 +0200
+
+					Modify item #4
+
+				commit 2c19f68f2f969394bfb9d4d66bb2fc19321b40f5 (origin/branch2)
+				Author: Daniel 193177 <daniel.stojanovski@students.finki.ukim.mk>
+				Date:   Sun Apr 10 19:35:52 2022 +0200
+
+					Add quantities to the items
+
+				commit 3120ac1e2e2bf7bf85aad6ee58591c74955926fd
+				Author: Daniel 193177 <daniel.stojanovski@students.finki.ukim.mk>
+				Date:   Sun Apr 10 19:35:02 2022 +0200
+
+					Add 5 items to the shopping list
+
+				commit 22975e0a47ba5b927423763dd8b3768b4c4985d3
+				Author: Daniel 193177 <daniel.stojanovski@students.finki.ukim.mk>
+				Date:   Sun Apr 10 19:33:41 2022 +0200
+
+					Initial commit
+
+				commit 1ceade96a2c233f2bb1987500605b2fd0d94878d
+				Author: Daniel-Stojanovski <100514343+Daniel-Stojanovski@users.noreply.github.com>
+				Date:   Sun Apr 10 19:30:29 2022 +0200
+
+					Initial commit
+				PS C:\Users\Krist\OneDrive\Documents\DANIEL\FINKI\6_SEMESTAR\SI\SI_LAB1\SI_2022_lab1_193177>
+				
+				
+18. git add shopping_list.txt												Го додаваме документот во Stage Аrea
+	git commit --amend -m "Modify item #4 and add item #6"					Правиме commit на документот во Local Repository и додаваме порака
+
+
+19.	git log
+				PS C:\Users\Krist\OneDrive\Documents\DANIEL\FINKI\6_SEMESTAR\SI\SI_LAB1\SI_2022_lab1_193177> git log
+				commit 43a302ac474aee429a6d46b8c2765bed877fd9fc (HEAD -> branch2)
+				Author: Daniel 193177 <daniel.stojanovski@students.finki.ukim.mk>
+				Date:   Sun Apr 10 19:40:24 2022 +0200
+
+					Modify item #4 and add item #6
+
+				commit 2c19f68f2f969394bfb9d4d66bb2fc19321b40f5 (origin/branch2)
+				Author: Daniel 193177 <daniel.stojanovski@students.finki.ukim.mk>
+				Date:   Sun Apr 10 19:35:52 2022 +0200
+
+					Add quantities to the items
+
+				commit 3120ac1e2e2bf7bf85aad6ee58591c74955926fd
+				Author: Daniel 193177 <daniel.stojanovski@students.finki.ukim.mk>
+				Date:   Sun Apr 10 19:35:02 2022 +0200
+
+					Add 5 items to the shopping list
+
+				commit 22975e0a47ba5b927423763dd8b3768b4c4985d3
+				Author: Daniel 193177 <daniel.stojanovski@students.finki.ukim.mk>
+				Date:   Sun Apr 10 19:33:41 2022 +0200
+
+					Initial commit
+
+				commit 1ceade96a2c233f2bb1987500605b2fd0d94878d
+				Author: Daniel-Stojanovski <100514343+Daniel-Stojanovski@users.noreply.github.com>
+				Date:   Sun Apr 10 19:30:29 2022 +0200
+
+					Initial commit
+				PS C:\Users\Krist\OneDrive\Documents\DANIEL\FINKI\6_SEMESTAR\SI\SI_LAB1\SI_2022_lab1_193177>
+
+
+20. git checkout master														Скокаме на гранката master
+	git merge branch1														Ја спојуваме гранката branch1 кон master
+
+
+21. git merge branch2														Ја спојуваме гранката branch2 кон master
+	
+	
+22. git add .																Ги додаваме документите во Stage Аrea
+	git commit -m "Add docs"												Правиме commit на документот во Local Repository и додаваме порака
+
+
+23. git push origin master
+	git push origin branch1													Синхронизирање на досегашните гранки во репозиториумот
+	git push origin branch2													

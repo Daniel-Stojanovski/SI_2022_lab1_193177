@@ -1,5 +1,6 @@
 bread x 1
 chicken x 10
 milk x 1
+cabbage x 1
+pepper x 1
 potato x 1
-pepper x 10
